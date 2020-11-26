@@ -1,66 +1,85 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
+
   <head>
-
-    <!-- Used by keyboard -->
-    <meta charset="utf-8">
-
-    <title>Learning HTML</title>
-
-    <!-- Used by Browser or Google Search-->
+    <title>I'm Learning to Layout</title>
+    <!-- Layout Language is not coding with algorithms-->
     <meta name="author" content="Baltej Malhi">
-    <meta name="description" content="Learning HTML by building a simple Website">
-    <meta name="keywords" content="boilerplate, starter code, HTML, learning">
+    <meta name="description" content="HTML Lessons"> <!-- Webpage Description -->
+    <meta name="keywords" content="HTML, meta data, inline CSS"> <!-- Key Words for conducting searches in Search Engines -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Content give value for name or http-equiv attribute, text entry in string or array string -->
 
-    <!-- meta http-equiv="default-style" content=""--> <!-- content matches css link exactly-->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-    <!-- Other meta attributes to be aware of -->
+      .header {
+        border: 1px solid red;
+        padding: 15px;
+      }
 
-    <!-- meta http-equiv="refresh" content="30"-->
-    <!-- Content forces a Internet Request to refresh webpage every "time value in seconds" -->
-    <!-- Use this when refreshes are needed -->
+      .menu {
+        width: 25%;
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+      }
 
-    <!-- meta http-equiv="content-type" content="text/html; charset=UTF-8" -->
-    <!-- Already specified in the charset above-->
+      .main {
+        width: 50%;
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+      }
+
+      .aside {
+        width: 25%;
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+      }
+
+      .footer {
+        border: 1px solid red;
+        padding: 15px;
+      }
+    </style>
+
   </head>
+
   <body>
-    <header><h1>Header Title</h1></header>
-      <nav><h1>Navigation</h1></nav>
-      <aside><p>This is the aside space.</p></aside>
-      <section>
-        <h3>Section 1</h3>
-        <article>
-          <p>This is article 1 in section 1.</p>
-        </article>
-        <article>
-          <p>This is article 2 in section 1.</p>
-        </article>
-      </section>
-      <section>
-        <h3>Section 2</h3>
-        <article>
-          <p>This is article 1 in section 2.</p>
-        </article>
-        <article>
-          <p>This is article 2 in section 2.</p>
-        </article>
-      </section>
+
+    <div class="header"><header><h1>Chania</h1></header></div>
+
+    <div class="menu">
+      <ul>
+        <li>The Flight</li>
+        <li>The City</li>
+        <li>The Island</li>
+        <li>The Food</li>
+      </ul>
+      <br><br>
+    </div>
+
+    <div class="main">
+      <h1>The City</h1>
+      <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+      <p>Resize the browser window to see how the content respond to the resizing.</p>
+    </div>
+
+    <div class="aside">
+      <h1>The Aside Space</h1>
+      <p>Giberish.</p>
+      <br><br>
+    </div>
+
+    <div class="footer">
+      <br><br>
+      <h1>The Quote</h1>
+      <p>Special Symbol and other things</p>
+    </div>
   </body>
-
-  <footer>
-    <blockquote cite="https://www.brainyquote.com/quotes/michael_jordan_167382">
-      <!-- Date Accessed 20201120-->
-    </blockquote>
-    <p>
-      <strong>"Some people want it to happen, some wish it would happen, other make it happen."</strong>
-      <em><a href="https://www.brainyquote.com/quotes/michael_jordan_167382" target="_blank">
-         - Michael Jordan</a>
-      </em>
-    </p>
-    <p>&copy Mark Mercer, powered by MercersKitchen in GitHub</p>
-
-  </footer>
 
 </html>
